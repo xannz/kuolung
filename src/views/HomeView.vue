@@ -1,6 +1,6 @@
 <template>
   <v-carousel hide-delimiters show-arrows="hover" height="auto">
-    <v-carousel-item src="/images/jj-banner-1.jpg" cover style="width:200px;height:auto;"></v-carousel-item>
+    <v-carousel-item src="./images/jj-banner-1.jpg" cover style="width:200px;height:auto;"></v-carousel-item>
 
     <!-- <v-carousel-item src="/images/jj-banner-2.png"  style="width:200px;height:auto;"></v-carousel-item>
 
@@ -12,7 +12,7 @@
       <v-row style="margin-top: 20px; margin: auto; max-width: 1200px;" justify="center">
         <v-col>
           <v-card class="mx-auto" max-width="400" elevation="1">
-            <v-img height="200" src="/images/shido_tempel.jpg" contain class="transparent">
+            <v-img height="200" src="./images/shido_tempel.jpg" contain class="transparent">
             </v-img>
             <v-card-title>Ju-Jitsu Club Kuolung Knokke-Heist</v-card-title>
             <v-card-subtitle class="pb-0">
@@ -27,7 +27,7 @@
         </v-col>
         <v-col>
           <v-card class="mx-auto" max-width="400" elevation="1">
-            <v-img height="200" src="/images/vjjf.jpg" contain class="transparent">
+            <v-img height="200" src="./images/vjjf.jpg" contain class="transparent">
             </v-img>
             <v-card-title>Vlaamse Ju-Jitsu Federatie</v-card-title>
             <v-card-text>
@@ -42,7 +42,7 @@
         </v-col>
         <v-col>
           <v-card class="mx-auto" max-width="400" elevation="1">
-            <v-img height="200" src="/images/sport-vlaanderen.png" contain class="transparent">
+            <v-img height="200" src="./images/sport-vlaanderen.png" contain class="transparent">
             </v-img>
             <v-card-title>Sport Vlaanderen</v-card-title>
             <v-card-subtitle class="pb-0">
