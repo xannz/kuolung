@@ -35,6 +35,11 @@ const router = createRouter({
       name: 'WhoIsWho',
       component: () => import("../views/WhoIsWho.vue")
     },
+    {
+      path: '/kalender',
+      name: 'Calendar',
+      component: () => import("../views/Calendar.vue")
+    },
     { 
       path: '/:catchAll(.*)', 
       component: () => import("../views/Error404.vue"),

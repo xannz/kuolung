@@ -37,7 +37,7 @@
             </v-list>
         </v-menu>
 
-        <v-btn>KALENDER</v-btn>
+        <v-btn router to="/kalender">KALENDER</v-btn>
 
         <template v-slot:append>
             <v-btn icon="mdi-instagram"></v-btn>
