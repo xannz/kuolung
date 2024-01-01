@@ -1,7 +1,7 @@
 <template>
     <v-app-bar :elevation="8">
         <template v-slot:prepend>
-            <v-app-bar-nav-icon><v-icon>mdi-home</v-icon></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon router to="/"><v-icon>mdi-home</v-icon></v-app-bar-nav-icon>
         </template>
         <!-- <v-spacer></v-spacer> -->
         <v-app-bar-title>Kuolung</v-app-bar-title>
@@ -16,7 +16,7 @@
                 </v-btn>
             </template>
             <v-list>
-                <v-list-item v-for="(item, index) in menuItemsJuJitsu" :key="index" :value="index">
+                <v-list-item v-for="(item, index) in menuItemsJuJitsu" :key="index" :value="index" router :to="item.route">
                     <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item>
             </v-list>
@@ -31,7 +31,7 @@
                 </v-btn>
             </template>
             <v-list>
-                <v-list-item v-for="(item, index) in menuItemsAboutUs" :key="index" :value="index">
+                <v-list-item v-for="(item, index) in menuItemsAboutUs" :key="index" :value="index" router :to="item.route">
                     <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item>
             </v-list>
@@ -41,24 +41,23 @@
 
         <template v-slot:append>
             <v-btn icon="mdi-instagram"></v-btn>
-
             <v-btn icon="mdi-facebook"></v-btn>
         </template>
     </v-app-bar>
 </template>
 
 <script setup lang="ts">
+import type router from '@/router';
 import { ref } from 'vue';
 
 let menuItemsJuJitsu = ref([
-    { title: 'Wat is Ju-Jitsu?' },
-    { title: 'Vlaamse Ju-Jitsu Federatie vzw' },
+    { title: 'Wat is Ju-Jitsu?', route: '/wat-is-ju-jitsu' },
+    { title: 'Vlaamse Ju-Jitsu Federatie vzw', route: '/vjjf' },
 ]);
 let menuItemsAboutUs = ref([
-    { title: 'Trainingsuren' },
-    { title: 'Lidgeld en verzekering' },
-    { title: 'Wie is wie' },
+    { title: 'Trainingsuren', route: '/trainingsuren' },
+    { title: 'Lidgeld en verzekering', route: '/lidgeld-en-verzekering'},
+    { title: 'Wie is wie' , route: '/wie-is-wie'},
 ]);
 
-// https://codepen.io/pumax/pen/XvKEyP
 </script>

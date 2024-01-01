@@ -1,9 +1,7 @@
 <template>
-  <v-carousel hide-delimiters show-arrows="hover" height="auto">
+  <v-carousel hide-delimiters show-arrows="hover" height="700">
     <v-carousel-item src="./images/jj-banner-1.jpg" cover style="width:200px;height:auto;"></v-carousel-item>
-
     <!-- <v-carousel-item src="/images/jj-banner-2.png"  style="width:200px;height:auto;"></v-carousel-item>
-
     <v-carousel-item src="/images/jj-banner-3.jpg"  style="width:200px;height:auto;"></v-carousel-item> -->
   </v-carousel>
 
@@ -60,7 +58,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 </script>
 
 <style scoped>
