@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "cd dist && cp index.html 404.html && cd .. && gh-pages -d dist"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
