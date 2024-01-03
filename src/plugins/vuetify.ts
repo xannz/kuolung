@@ -30,6 +30,9 @@ import { createVuetify, type ThemeDefinition } from 'vuetify'
 //   },
 // })
 
-
+import { VCalendar } from 'vuetify/labs/VCalendar';
 export default createVuetify({
+    components: {
+        VCalendar,
+    }
 })
