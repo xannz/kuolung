@@ -40,6 +40,11 @@ const router = createRouter({
       name: 'Calendar',
       component: () => import("../views/Calendar.vue")
     },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: () => import("../views/Contact.vue")
+    },
     { 
       path: '/:catchAll(.*)', 
       component: () => import("../views/Error404.vue"),

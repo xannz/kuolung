@@ -5,7 +5,7 @@
         </template>
         <!-- <v-spacer></v-spacer> -->
         <v-app-bar-title>Kuolung</v-app-bar-title>
-        <v-btn>FOTOS</v-btn>
+        <v-btn  router to="/contact">Contact</v-btn>
         <v-menu open-on-hover>
             <template v-slot:activator="{ props }">
                 <v-btn v-bind="props">
