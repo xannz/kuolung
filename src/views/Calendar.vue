@@ -45,6 +45,30 @@ let events = ref(
           end: new Date('2024-01-03 10:30'),
           color: 'deep-purple',
         },
+        {
+          title: 'Fighting Groep 1 (17:30-18:30)', // Visual bug when on an half hour when the calendar is in week view
+          start: new Date('2024-01-05 17:30'),
+          end: new Date('2024-01-05 18:30'),
+          color: 'deep-purple',
+        },
+        {
+          title: 'Fighting Groep 2 (18:30-20:30)',
+          start: new Date('2024-01-05 18:30'),
+          end: new Date('2024-01-05 20:30'),
+          color: 'deep-purple',
+        },
+        {
+          title: 'Fighting Alle (19:00-20:30)',
+          start: new Date('2024-01-06 19:00'),
+          end: new Date('2024-01-06 20:30'),
+          color: 'deep-purple',
+        },
+        {
+          title: 'Volwassenen (20:00-21:30)',
+          start: new Date('2024-01-8 20:00'),
+          end: new Date('2024-01-08 21:30'),
+          color: 'deep-purple',
+        }
       ]
 
     // {title: 'Adults', start: new Date('2024-01-07'), end: new Date('2024-01-07'), color: 'blue'}
