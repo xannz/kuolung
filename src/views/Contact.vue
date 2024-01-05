@@ -22,10 +22,12 @@
         Probeer het later opnieuw.</v-alert>
     <v-alert width="600" class="mx-auto" v-if="showSuccessMessage" type="success">Bericht verzonden. We proberen zo snel
         mogelijk te antwoorden.</v-alert>
+        <FooterCustom/>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import FooterCustom from '../components/FooterCustom.vue'; 
 
 let showErrorMessage = ref(false);
 let showSuccessMessage = ref(false);

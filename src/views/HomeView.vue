@@ -5,66 +5,73 @@
     <v-carousel-item src="/images/jj-banner-3.jpg"  style="width:200px;height:auto;"></v-carousel-item> -->
   </v-carousel>
 
-  <div>
-    <v-container>
-      <v-row style="margin-top: 20px; margin: auto; max-width: 1200px;" justify="center">
-        <v-col>
-          <v-card class="mx-auto" max-width="400" elevation="1">
-            <v-img height="200" src="./images/shido_tempel.jpg" contain class="transparent">
-            </v-img>
-            <v-card-title>Ju-Jitsu Club Kuolung Knokke-Heist</v-card-title>
-            <v-card-subtitle class="pb-0">
-              
-            </v-card-subtitle>
-            <v-card-actions>
-              <v-btn color="blue" variant="text" @click="">
-                Create
-              </v-btn>
-            </v-card-actions>
+  <v-card class="mx-auto" max-width="800">
+    <v-container fluid>
+      <v-row dense>
+        <v-col :cols="12">
+          <v-card>
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-card-title class="text-h5">
+                  Ju-Jitsu Kuolung Knokke-Heist
+                </v-card-title>
+
+                <v-card-subtitle>Zelfverdediging voor jong en oud. <br /> Bij vragen kan je ons steeds een bericht sturen via onderstaande knop.</v-card-subtitle>
+
+                <v-card-actions>
+                  <v-btn class="ms-2" variant="outlined" size="small" router to="/contact">
+                    Stel een vraag
+                  </v-btn>
+                </v-card-actions>
+              </div>
+
+              <v-avatar class="ma-3" size="200" rounded="0">
+                <v-img src="./images/shido_tempel.jpg"></v-img>
+              </v-avatar>
+            </div>
           </v-card>
         </v-col>
-        <v-col>
-          <v-card class="mx-auto" max-width="400" elevation="1">
-            <v-img height="200" src="./images/vjjf.jpg" contain class="transparent">
-            </v-img>
-            <v-card-title>Vlaamse Ju-Jitsu Federatie</v-card-title>
-            <v-card-text>
-              Kuolung is deel van de VJJF. De Vlaamse Ju-Jitsu Federatie vzw heeft als missie het verenigen van alle ju-jitsuclubs (zowel recreatief als competitief) in Vlaanderen en het Brussels Hoofdstedelijk Gewest in 1 kwalitatief hoogstaande federatie. Het is de bedoeling alle stijlen en vormen van ju-jitsu onder te brengen in een goed georganiseerde structuur, zodat alle stijlen hun eigenheid en zelfstandigheid kunnen behouden en toch kennis kunnen uitwisselen. Daarnaast wensen wij de sport ju-jitsu uit te bouwen tot een grote en bekende sport in Vlaanderen.
-            </v-card-text>
-            <v-card-actions>
-              <v-btn color="blue" variant="text" @click="">
-                Create
-              </v-btn>
-            </v-card-actions>
-          </v-card>
+        <v-col :cols="6">
+          <v-card>
+              <v-img src="./images/vjjf.jpg" height="400px" aspect-ratio="1" class="align-end">      
+                          
+              </v-img>
+              <v-card-title class="text-black" >VJJF</v-card-title>
+              <v-card-subtitle>Kuolung is onderdeel van de Vlaamse Ju-Jitsu Federatie.</v-card-subtitle>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn size="small" color="surface-variant" variant="text" icon="mdi-link" href="https://www.vjjf.be/" target="_blank"></v-btn>
+              </v-card-actions>
+            </v-card>
         </v-col>
-        <v-col>
-          <v-card class="mx-auto" max-width="400" elevation="1">
-            <v-img height="200" src="./images/sport-vlaanderen.png" contain class="transparent">
-            </v-img>
-            <v-card-title>Sport Vlaanderen</v-card-title>
-            <v-card-subtitle class="pb-0">
-              Kuolung is deel van Sport Vlaanderen.
-            </v-card-subtitle>
-            <v-card-actions>
-              <v-btn color="blue" variant="text" @click="">
-                Create
-              </v-btn>
-            </v-card-actions>
-          </v-card>
+        <v-col :cols="6">
+          <v-card>
+              <v-img src="./images/sport-vlaanderen.png" height="400px" class="align-end">      
+                          
+              </v-img>
+              <v-card-title class="text-black" >Sport Vlaanderen</v-card-title>
+              <v-card-subtitle>Erkende sportclub bij Sport Vlaanderen.</v-card-subtitle>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+
+                <v-btn size="small" color="surface-variant" variant="text" icon="mdi-link" href="https://www.sport.vlaanderen/" target="_blank"></v-btn>
+              </v-card-actions>
+            </v-card>
         </v-col>
       </v-row>
     </v-container>
-  </div>
+  </v-card>
+  <FooterCustom/>
 </template>
 
 <script setup lang="ts">
+import FooterCustom from '../components/FooterCustom.vue'; // TODO when calendar is fixed we can move this to app.vue
 </script>
 
 <style scoped>
 .transparent {
-    background-color: white !important;
-    border-color: transparent !important;
+  background-color: white !important;
+  border-color: transparent !important;
 }
 </style>
 

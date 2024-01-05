@@ -66,9 +66,11 @@ Leden die deelnemen aan competitie moeten over een jaarlijks hernieuwd attest be
             <v-spacer></v-spacer>
         </v-row>
     </v-container>
+    <FooterCustom/>
 </template>
 
 <script setup lang="ts">
+import FooterCustom from '../components/FooterCustom.vue'; 
 import { ref } from 'vue';
 
 let fees = ref([

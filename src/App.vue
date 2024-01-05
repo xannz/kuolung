@@ -1,10 +1,11 @@
 <template>
   <v-app>
     <v-main>
-      <Navigation />
-      <router-view/>
-    </v-main>
+      <Navigation/>
+      <router-view/>      
+    </v-main>    
   </v-app>
+  
 </template>
 
 <script setup lang="ts">

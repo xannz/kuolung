@@ -37,7 +37,9 @@ Enkele jaren geleden werd binnen de V.J.J.F. vzw het “Regenboogplan” boven d
             <v-spacer></v-spacer>
         </v-row>
     </v-container>
+    <FooterCustom/>
 </template>
 
 <script setup lang="ts">
+import FooterCustom from '../components/FooterCustom.vue'; 
 </script>

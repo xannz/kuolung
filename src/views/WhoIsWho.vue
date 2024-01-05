@@ -40,9 +40,11 @@
         <!-- </v-col> -->
 
     </v-row>
+    <FooterCustom/>
 </template>
 
 <script setup lang="ts">
+import FooterCustom from '../components/FooterCustom.vue'; 
 import { ref } from 'vue';
 
 let cards = ref([

@@ -88,10 +88,12 @@
             <v-spacer></v-spacer>
         </v-row>
     </v-container>
+    <FooterCustom/>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import FooterCustom from '../components/FooterCustom.vue'; 
 
 let tab = ref(null);
 let trainingHoursYouth = ref([

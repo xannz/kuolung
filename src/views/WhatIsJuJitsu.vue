@@ -58,7 +58,9 @@
             <v-spacer></v-spacer>
         </v-row>
     </v-container>
+    <FooterCustom/>
 </template>
 
 <script setup lang="ts">
+import FooterCustom from '../components/FooterCustom.vue'; 
 </script>

@@ -40,14 +40,13 @@
         <v-btn router to="/kalender">KALENDER</v-btn>
 
         <template v-slot:append>
-            <v-btn icon="mdi-instagram"></v-btn>
-            <v-btn icon="mdi-facebook"></v-btn>
+            <v-btn icon="mdi-instagram" href="https://www.instagram.com/kuolungknokkeheist/" target="_blank"></v-btn>
+            <v-btn icon="mdi-facebook" href="https://www.facebook.com/kuolungknokke/" target="_blank"></v-btn>
         </template>
     </v-app-bar>
 </template>
 
 <script setup lang="ts">
-import type router from '@/router';
 import { ref } from 'vue';
 
 let menuItemsJuJitsu = ref([
