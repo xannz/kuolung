@@ -1,5 +1,5 @@
 <template>
-    <v-footer color="primary lighten-1" app inset padless absolute width="auto">
+    <v-footer color="black" app inset padless absolute width="auto">
         <div class="text-center w-100">
             <strong>{{ new Date().getFullYear() }}</strong> — <strong>Ju Jitsu Kuo-Lung Knokke-Heist vzw</strong> —
             <v-btn icon="mdi-facebook" variant="text" size="large" href="https://www.facebook.com/kuolungknokke/"

@@ -4,7 +4,7 @@
             <v-app-bar-nav-icon router to="/"><v-icon>mdi-home</v-icon></v-app-bar-nav-icon>
         </template>
         <!-- <v-spacer></v-spacer> -->
-        <v-app-bar-title>Kuolung</v-app-bar-title>
+        <v-app-bar-title style="cursor: pointer" @click="$router.push('/')">Kuolung</v-app-bar-title>
         <v-btn  router to="/contact">Contact</v-btn>
         <v-menu open-on-hover>
             <template v-slot:activator="{ props }">

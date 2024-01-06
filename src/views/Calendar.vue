@@ -67,10 +67,8 @@ let events = ref(
           title: 'Volwassenen (20:00-21:30)',
           start: new Date('2024-01-8 20:00'),
           end: new Date('2024-01-08 21:30'),
-          color: 'deep-purple',
+          color: 'blue',
         }
       ]
-
-    // {title: 'Adults', start: new Date('2024-01-07'), end: new Date('2024-01-07'), color: 'blue'}
 );
 </script>
