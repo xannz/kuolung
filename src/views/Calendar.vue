@@ -2,7 +2,7 @@
     <v-parallax height="300" src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg">
         <div class="d-flex flex-column fill-height justify-center align-center text-white">
             <h1 class="text-h4 font-weight-thick mb-4">
-                Trainingsuren
+                Kalender
             </h1>
         </div>
     </v-parallax>

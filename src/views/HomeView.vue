@@ -1,5 +1,5 @@
 <template>
-  <v-carousel hide-delimiters show-arrows="hover" height="600">
+  <v-carousel hide-delimiters show-arrows="hover" height="600" v-if="!isMobile">
     <v-carousel-item src="./images/jj-banner-1.jpg" cover style="width:200px;height:auto;"></v-carousel-item>
     <!-- <v-carousel-item src="/images/jj-banner-2.png"  style="width:200px;height:auto;"></v-carousel-item>
     <v-carousel-item src="/images/jj-banner-3.jpg"  style="width:200px;height:auto;"></v-carousel-item> -->
@@ -113,6 +113,15 @@
 
 <script setup lang="ts">
 import FooterCustom from '../components/FooterCustom.vue'; // TODO when calendar is fixed we can move this to app.vue
+import { computed, unref } from 'vue'
+import { useDisplay } from 'vuetify'
+
+// https://stackoverflow.com/questions/60128083/how-to-build-a-responsive-vuetify-app-bar
+const display = useDisplay()
+
+const isMobile = computed(() => {
+    return unref(display.mobile)
+})
 </script>
 
 <style scoped>
