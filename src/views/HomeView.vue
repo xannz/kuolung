@@ -8,7 +8,7 @@
   <v-card class="mx-auto" max-width="1140px" elevation="0">
     <v-container fluid>
       <v-row dense>
-        <v-col :cols="12">
+        <v-col cols="12">
           <v-card elevation="0">
             <div class="d-flex flex-no-wrap justify-space-between">
               <div>
@@ -34,7 +34,7 @@
             </div>
           </v-card>
         </v-col>
-        <v-col :cols="4">
+        <v-col cols="12" sm="4">
           <v-card>
             <v-img src="./images/jj-training.jpg" height="200px" aspect-ratio="1" class="align-end" cover
               style="cursor: pointer" @click="$router.push('/trainingsuren')"></v-img>
@@ -47,7 +47,7 @@
               </v-card-actions> -->
           </v-card>
         </v-col>
-        <v-col :cols="4">
+        <v-col cols="12" sm="4">
           <v-card>
             <v-img src="./images/jj-membership.jpg" height="200px" class="align-end" cover aspect-ratio="1"
               style="cursor: pointer" @click="$router.push('/lidgeld-en-verzekering')">
@@ -63,7 +63,7 @@
               </v-card-actions> -->
           </v-card>
         </v-col>
-        <v-col :cols="4">
+        <v-col cols="12" sm="4">
           <v-card>
             <v-img src="./images/jj-competition.jpg" height="200px" class="align-end" cover aspect-ratio="1">
 
@@ -77,7 +77,7 @@
               </v-card-actions> -->
           </v-card>
         </v-col>
-        <v-col :cols="6">
+        <v-col cols="12" sm="6">
           <v-card>
             <a href="https://www.vjjf.be" target="_blank"><v-img src="./images/vjjf.jpg" height="200px" aspect-ratio="1"
                 class="align-end" style="cursor: pointer"></v-img></a>
@@ -91,7 +91,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col :cols="6">
+        <v-col cols="12" sm="6">
           <v-card>
             <a href="https://www.sport.vlaanderen/" target="_blank"><v-img src="./images/sport-vlaanderen.png"
                 height="200px" class="align-end"></v-img> </a>

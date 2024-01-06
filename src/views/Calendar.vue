@@ -9,8 +9,8 @@
 
     <v-container>
         <v-row class="fill-height">
-      <v-col>
-        <v-sheet height="400">
+      <v-col cols="12">
+        <v-sheet max-height="400">
           <v-calendar
             ref="calendar"
             v-model="today"

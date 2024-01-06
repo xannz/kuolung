@@ -10,7 +10,7 @@
     <v-container>
         <v-row>
             <v-spacer></v-spacer>
-            <v-col cols="5">
+            <v-col cols="12" sm="5">
                 <h1 class="text-h4 font-weight-thick mb-4">
                     Jaarlijkse lidmaatschapsbijdrage
                 </h1>

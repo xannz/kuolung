@@ -11,7 +11,7 @@
         <v-card class="mx-auto" max-width="1200">
             <v-container fluid>
                 <v-row dense>
-                    <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+                    <v-col v-for="card in cards" :key="card.title" cols="12" :sm="card.flex">
                         <v-card>
                             <v-img :src="card.src" class="align-end" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                                 height="600px" cover>

@@ -10,7 +10,7 @@
     <v-container>
         <v-row>
             <v-spacer></v-spacer>
-            <v-col cols="5" class="d-flex justify-center">
+            <v-col cols="12" sm="5" class="d-flex justify-center">
                 <p class="text-md-left">
                     <!-- https://theultimatecoder.com/how-to-use-other-font-family-in-vuetify-3/ -->
 

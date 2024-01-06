@@ -11,7 +11,7 @@
         <v-row>
             <v-spacer></v-spacer>
             <!-- <v-col cols="5" class="d-flex justify-center"> -->
-            <v-col cols="5">
+            <v-col cols="12" sm="5">
                 <v-card>
                     <v-tabs v-model="tab" align-tabs="center" centered stacked>
                         <v-tab :value="1"><v-icon>mdi-human-child</v-icon>Jeugd (5-14j)</v-tab>
@@ -53,7 +53,7 @@
         </v-row>
         <v-row>
             <v-spacer></v-spacer>
-            <v-col cols="5">
+            <v-col cols="12" sm="5">
                 <h1 class="text-h4 font-weight-thick mb-4">
                     Jaaroverzicht
                 </h1>
@@ -68,7 +68,7 @@
         </v-row>
         <v-row>
             <v-spacer></v-spacer>
-            <v-col cols="5">
+            <v-col cols="12" sm="5">
                 <h1 class="text-h4 font-weight-thick mb-4">
                     Locatie
                 </h1>

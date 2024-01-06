@@ -8,7 +8,7 @@
     </v-parallax>
 
 
-    <v-sheet width="600" class="mx-auto">
+    <v-sheet max-width="800" class="mx-auto">
         <v-form @submit.prevent v-model="valid" ref="contactForm" validate-on="input">
             <v-text-field v-model="name" label="Naam" :rules="nameRules"></v-text-field>
             <v-text-field v-model="email" label="Email" :rules="emailRules"></v-text-field>
@@ -18,9 +18,9 @@
                 :disabled="disableSendBtn">Verstuur</v-btn>
         </v-form>
     </v-sheet>
-    <v-alert width="600" class="mx-auto" v-if="showErrorMessage" type="error">Er is iets verkeerd gegaan aan onze kant.
+    <v-alert max-width="800" class="mx-auto" v-if="showErrorMessage" type="error">Er is iets verkeerd gegaan aan onze kant.
         Probeer het later opnieuw.</v-alert>
-    <v-alert width="600" class="mx-auto" v-if="showSuccessMessage" type="success">Bericht verzonden. We proberen zo snel
+    <v-alert max-width="800" class="mx-auto" v-if="showSuccessMessage" type="success">Bericht verzonden. We proberen zo snel
         mogelijk te antwoorden.</v-alert>
         <FooterCustom/>
 </template>

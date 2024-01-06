@@ -10,7 +10,7 @@
     <v-container>
         <v-row>
             <v-spacer></v-spacer>
-            <v-col cols="5" class="d-flex justify-center">
+            <v-col cols="12" sm="5" class="d-flex justify-center">
                 <p class="text-md-left">
                     Onze club is aangesloten bij de Vlaamse Ju-Jitsu Federatie vzw. De V.J.J.F. vzw is een overkoepelend orgaan van en voor Vlaamse ju-jitsuclubs. Ze verenigt recreatieve en competitieve clubs en houdt ook rekening met de verschillende stijlen ju-jitsu van de clubs. Elke club kan zo haar eigenheid en zelfstandigheid bewaren, waarbij kwaliteit centraal staat. De V.J.J.F. vzw wenst samen met haar clubs de sport ju-jitsu uit te bouwen tot een grote en bekende sport in Vlaanderen.
                     <br />
