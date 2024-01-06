@@ -38,7 +38,8 @@
           <v-card>
             <v-img src="./images/jj-training.jpg" height="200px" aspect-ratio="1" class="align-end" cover
               style="cursor: pointer" @click="$router.push('/trainingsuren')"></v-img>
-            <v-card-title class="text-black text-center">Trainingsuren</v-card-title>
+            <v-card-title class="text-black text-center" style="cursor: pointer"
+              @click="$router.push('/trainingsuren')">Trainingsuren</v-card-title>
             <!-- <v-card-subtitle>Kuolung is onderdeel van de Vlaamse Ju-Jitsu Federatie.</v-card-subtitle> -->
             <!-- <v-card-actions>
                 <v-spacer></v-spacer>
@@ -52,7 +53,8 @@
               style="cursor: pointer" @click="$router.push('/lidgeld-en-verzekering')">
 
             </v-img>
-            <v-card-title class="text-black text-center">Lidmaatschap</v-card-title>
+            <v-card-title class="text-black text-center" style="cursor: pointer"
+              @click="$router.push('/lidgeld-en-verzekering')">Lidmaatschap</v-card-title>
             <!-- <v-card-subtitle>Erkende sportclub bij Sport Vlaanderen.</v-card-subtitle> -->
             <!-- <v-card-actions>
                 <v-spacer></v-spacer>
@@ -79,12 +81,13 @@
           <v-card>
             <a href="https://www.vjjf.be" target="_blank"><v-img src="./images/vjjf.jpg" height="200px" aspect-ratio="1"
                 class="align-end" style="cursor: pointer"></v-img></a>
-            <v-card-title class="text-black">VJJF</v-card-title>
+            <a href="https://www.vjjf.be" target="_blank" style="text-decoration: none; color: inherit;"><v-card-title
+                class="text-black">VJJF</v-card-title></a>
             <v-card-subtitle>Kuolung is onderdeel van de Vlaamse Ju-Jitsu Federatie.</v-card-subtitle>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn size="small" color="surface-variant" variant="text" icon="mdi-link" href="https://www.vjjf.be/"
-                target="_blank"></v-btn>
+              <!-- <v-btn size="small" color="surface-variant" variant="text" icon="mdi-link" href="https://www.vjjf.be/"
+                target="_blank"></v-btn> -->
             </v-card-actions>
           </v-card>
         </v-col>
@@ -92,13 +95,13 @@
           <v-card>
             <a href="https://www.sport.vlaanderen/" target="_blank"><v-img src="./images/sport-vlaanderen.png"
                 height="200px" class="align-end"></v-img> </a>
-            <v-card-title class="text-black">Sport Vlaanderen</v-card-title>
-            <v-card-subtitle>Erkende sportclub bij Sport Vlaanderen.</v-card-subtitle>
-            <v-card-actions>
-              <v-spacer></v-spacer>
+            <a href="https://www.vjjf.be" target="_blank" style="text-decoration: none; color: inherit;"><v-card-title
+                class="text-black">Sport Vlaanderen</v-card-title></a>
 
-              <v-btn size="small" color="surface-variant" variant="text" icon="mdi-link"
-                href="https://www.sport.vlaanderen/" target="_blank"></v-btn>
+            <v-card-subtitle>Erkende sportclub bij Sport Vlaanderen.</v-card-subtitle>
+            
+            <v-card-actions>
+              <!-- <v-spacer></v-spacer> -->
             </v-card-actions>
           </v-card>
         </v-col>
@@ -112,7 +115,8 @@
 import FooterCustom from '../components/FooterCustom.vue'; // TODO when calendar is fixed we can move this to app.vue
 </script>
 
-<style scoped>.transparent {
+<style scoped>
+.transparent {
   background-color: white !important;
   border-color: transparent !important;
 }</style>

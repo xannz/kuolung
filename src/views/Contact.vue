@@ -58,8 +58,8 @@ async function sendContactMessage() {
 
     // TODO Captcha check
 
-    let validForm  = await contactForm.value.validate()
-    if (!validForm.value) {
+    let validForm  = await contactForm.value.validate();
+    if (!validForm.valid) {
         return;
     }
 
