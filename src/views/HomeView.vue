@@ -21,7 +21,7 @@
                       Jiu-jitsu of ju-jitsu is een Japanse krijgskunst en wordt vertaald als “zachte kunst“, het is een
                       zelfverdedigingskunst waarmee een potentiële aanvaller kan worden uitgeschakeld dan wel
                       gecontroleerd. Je leert je verdedigen tegen verschillende aanvallen alsook verschillende
-                      aanvalstechnieken zoals trappen en stoten, klemmen, worpen, wugingen en meer.
+                      aanvalstechnieken zoals trappen en stoten, klemmen, worpen, wurgingen en meer.
                     </v-col>
                     <v-col cols="6">
                       Ju-jitsu is geschikt voor alle leefteden en kan in twee vormen binnen onze club gevolgd worden.
