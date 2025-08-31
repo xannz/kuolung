@@ -1,144 +1,98 @@
-<template>
-  <v-parallax height="300" src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"><div class="d-flex flex-column fill-height justify-center align-center text-white">
-        <h1 class="text-h4 font-weight-thick mb-4">
-          Trainingsuren
+does this check out? <template>
+  <v-parallax height="300" src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg">
+    <div class="d-flex flex-column fill-height justify-center align-center text-white">
+      <h1 class="text-h4 font-weight-thick mb-4">
+        Kalender
       </h1>
     </div>
   </v-parallax>
 
   <v-container>
-    <v-row>
-      <v-spacer></v-spacer>
-      <!-- <v-col cols="5" class="d-flex justify-center"> -->
-      <v-col cols="12" sm="5">
-        <v-card>
-          <v-tabs v-model="tab" align-tabs="center" centered stacked>
-            <v-tab :value="1"><v-icon>mdi-human-child</v-icon>Jeugd (5-14j)</v-tab>
-            <v-tab :value="2"><v-icon>mdi-account</v-icon>Volwassenen (+14j)</v-tab>
-            <v-tab :value="3"><v-icon>mdi-trophy</v-icon>Fighting competitie</v-tab>
-          </v-tabs>
-          <v-window v-model="tab">
-            <v-window-item :key="1" :value="1">
-              <v-card>
-                <v-list :items="trainingHoursYouth" item-props lines="three">
-                  <template v-slot:subtitle="{ subtitle }">
-                    <div v-html="subtitle"></div>
-                  </template>
-                </v-list>
-              </v-card>
-            </v-window-item>
-            <v-window-item :key="2" :value="2">
-              <v-card>
-                <v-list :items="trainingHoursAdults" item-props lines="three">
-                  <template v-slot:subtitle="{ subtitle }">
-                    <div v-html="subtitle"></div>
-                  </template>
-                </v-list>
-              </v-card>
-            </v-window-item>
-            <v-window-item :key="3" :value="3">
-              <v-card>
-                <v-list :items="trainingHoursCompetition" item-props lines="three">
-                  <template v-slot:subtitle="{ subtitle }">
-                    <div v-html="subtitle"></div>
-                  </template>
-                </v-list>
-              </v-card>
-            </v-window-item>
-          </v-window>
-        </v-card>
+    <v-row class="fill-height">
+      <v-col cols="12">
+        <v-sheet max-height="400">
+          <v-calendar
+              ref="calendar"
+              v-model="today"
+              color="primary"
+              view-mode="month"
+              :events="events"
+          ></v-calendar>
+        </v-sheet>
       </v-col>
-      <v-spacer></v-spacer>
-    </v-row>
-    <v-row>
-      <v-spacer></v-spacer>
-      <v-col cols="12" sm="5">
-        <h1 class="text-h4 font-weight-thick mb-4">
-          Jaaroverzicht
-        </h1>
-        <br />
-        <p>
-          Ju-Jitsu trainingen vangen aan begin september en eindigen eind juni (10 maanden).
-          Tijdens de zomervakantie worden twee strandtrainingen voorzien, waarvan de datum tijdig gemeld zal
-          worden.
-        </p>
-      </v-col>
-      <v-spacer></v-spacer>
-    </v-row>
-    <v-row>
-      <v-spacer></v-spacer>
-      <v-col cols="12" sm="5">
-        <h1 class="text-h4 font-weight-thick mb-4">
-          Locatie
-        </h1>
-        <br />
-        <p>
-          Sporthal de Stormmeeuw<br />
-          E.Verheyestraat 14<br />
-          8300 Knokke<br />
-        </p>
-        <br />
-        <p>
-          Sporthal Laguna<br />
-          Krommedijk 32<br />
-          8300 Knokke (Duinbergen)<br />
-        </p>
-      </v-col>
-      <v-spacer></v-spacer>
     </v-row>
   </v-container>
-  <FooterCustom/>
+
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import FooterCustom from '../components/FooterCustom.vue';
 
-let tab = ref(null);
-let trainingHoursYouth = ref([
-  { type: 'subheader', title: 'Zaterdag' },
-  {
-    prependIcon: 'mdi-numeric-1-circle',
-    title: '09:30 - 10:30',
-    subtitle: `<span class="text-primary">Vanaf 5 jaar</span> &mdash; Sporthal de Stormmeeuw`,
-  },
-  {
-    prependIcon: 'mdi-numeric-2-circle',
-    title: '10:30 - 11:30',
-    subtitle: `<span class="text-primary">Vanaf 10 jaar</span> &mdash; Sporthal de Stormmeeuw`,
-  },
-  {
-    prependIcon: 'mdi-numeric-3-circle',
-    title: '11:30 - 12:30',
-    subtitle: `<span class="text-primary">Vanaf 13 jaar</span> &mdash; Sporthal de Stormmeeuw`,
-  }
-]);
-let trainingHoursAdults = ref([
-  { type: 'subheader', title: 'Maandag' },
-  {
-    prependIcon: 'mdi-numeric-1-circle',
-    title: '20:00 - 22:00',
-    subtitle: `<span class="text-primary">Alle volwassenen</span> &mdash; Sporthal Laguna`,
-  },
-  { type: 'divider', inset: true },
-  { type: 'subheader', title: 'Vrijdag' },
-  {
-    prependIcon: 'mdi-numeric-1-circle',
-    title: 'Vrijdag 20:00 - 22:00',
-    subtitle: `<span class="text-primary">Alle volwassenen</span> &mdash; Sporthal de Stormmeeuw`,
-  }
-]);
-let trainingHoursCompetition = ref([
-  { type: 'subheader', title: 'Woensdag' },
-  {
-    prependIcon: 'mdi-numeric-1-circle',
-    title: '18:00 - 19:30',
-    subtitle: `<span class="text-primary">Groep 1</span> &mdash; Sporthal de Stormmeeuw`,
-  },
-  {
-    prependIcon: 'mdi-numeric-2-circle',
-    title: '19:30 - 21:00',
-    subtitle: `<span class="text-primary">Groep 2</span> &mdash; Sporthal de Stormmeeuw`,
-  }
-]);
+let titles = ref(['Adults', 'Youth', 'Competition', 'Event']);
+let colors = ref(['blue', 'indigo', 'deep-purple', 'orange']);
+let today = ref([new Date()]);
+let events = ref(
+    [
+      {
+        title: 'Start traingingen jeugd',
+        start: new Date('2025-09-06 9:30'),
+        end: new Date('2025-09-06 12:30'),
+        color: colors.value[1],
+      },
+      {
+        title: 'Start trainingen fighting',
+        start: new Date('2025-09-03 18:00'),
+        end: new Date('2025-09-03 21:00'),
+        color: colors.value[2],
+      },
+      {
+        title: 'Start trainingen volwassenen',
+        start: new Date('2025-09-01 20:00'),
+        end: new Date('2025-09-01 22:00'),
+        color: colors.value[0],
+      },
+      {
+        title: 'Vrijetijdsmarkt tuinen Scharpoord',
+        start: new Date('2025-09-14 10:00'),
+        end: new Date('2025-09-14 13:00'),
+        color: colors.value[3],
+      },
+      {
+        title: 'Jeugd Sport Weekend',
+        start: new Date('2025-11-07 18:00'),
+        end: new Date('2025-11-09 17:00'),
+        color: colors.value[1],
+      },
+      {
+        title: 'Sinterklaas & familiedag (Laguna Duinbergen)',
+        start: new Date('2025-12-06 10:00'),
+        end: new Date('2025-12-06 12:00'),
+        color: colors.value[3],
+      },
+      {
+        title: 'Kuo Lung On Ice (schaatspiste A. Verweeplein)',
+        start: new Date('2024-12-20 18:00'),
+        end: new Date('2024-12-20 20:00'),
+        color: colors.value[3],
+      },
+      {
+        title: 'Ardennen Weekend (16+, geboren in 2010 of eerder)',
+        start: new Date('2026-05-22 10:00'),
+        end: new Date('2026-05-21 17:00'),
+        color: colors.value[0],
+      },
+      {
+        title: 'Souper',
+        start: new Date('2025-06-27 18:00'),
+        end: new Date('2025-06-27 23:00'),
+        color: colors.value[3],
+      },
+      {
+        title: 'West-Vlaams Open',
+        start: new Date('2025-10-18 09:00'),
+        end: new Date('2025-10-18 18:00'),
+        color: colors.value[2],
+      }
+    ]
+);
 </script>
