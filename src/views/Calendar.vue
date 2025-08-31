@@ -13,7 +13,7 @@
         <v-sheet max-height="400">
           <v-calendar
               ref="calendar"
-              v-model="today"
+              v-model:date="today"
               color="primary"
               view-mode="month"
               :events="events"
@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import {type Ref, ref} from 'vue';
 
 const titles = ref(['Adults', 'Youth', 'Competition', 'Event']);
 const colors = ref(['blue', 'indigo', 'deep-purple', 'orange']);
