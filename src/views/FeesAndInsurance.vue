@@ -38,7 +38,7 @@
         <br />
         <p>
 
-          Voor meer info: <a href="https://www.knokke-heist.be/uitpas" target="_blank" title="'https://www.knokke-heist.be/uitpas" /> of neem contact op met Tamara.
+          Voor meer info: <a href="https://www.knokke-heist.be/uitpas" > https://www.knokke-heist.be/uitpas </a> of neem contact op met Tamara.
 
         </p>
         <br />
