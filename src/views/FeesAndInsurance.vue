@@ -21,7 +21,7 @@
         </v-list>
         <br />
         <p>
-          Wanneer een gezinslid reeds traint bij onze club, krijgen andere gezinsleden een korting van € 15 op het lidgeld.
+          Wanneer een gezinslid reeds traint bij onze club, krijgen andere gezinsleden een korting van € 20 op het lidgeld.
         </p>
         <br />
         <p>
@@ -33,12 +33,12 @@
         </p>
         <br />
         <p>
-          we werken voor het eerst samen met ©UitPAS!
+          We werken samen met ©UitPAS!
         </p>
         <br />
         <p>
 
-          Voor meer info: <a href="https://www.knokke-heist.be/uitpas" target="_blank"> https://www.knokke-heist.be/uitpas </a>  of neem contact op met Tamara.
+          Voor meer info: <a href="https://www.knokke-heist.be/uitpas" target="_blank" title="'https://www.knokke-heist.be/uitpas" /> of neem contact op met Tamara.
 
         </p>
         <br />
@@ -56,7 +56,7 @@
         </h1>
         <br />
         <p>
-          Iedereen die Ju-Jitsu wil beoefenen moet zich aansluiten bij de Vlaamse Ju-Jitsu Federatie, waarin een sportverzekering vervat zit: 25 Euro. Dit zit al inbegrepen bij het inschrijvingsgeld.
+          Iedereen die Ju-Jitsu wil beoefenen moet zich aansluiten bij de Vlaamse Ju-Jitsu Federatie, waarin een sportverzekering vervat zit: 30 Euro. Dit zit al inbegrepen bij het inschrijvingsgeld.
         </p>
       </v-col>
       <v-spacer></v-spacer>
@@ -86,23 +86,23 @@ import { ref } from 'vue';
 let fees = ref([
   {
     prependIcon: 'mdi-numeric-1-circle',
-    title: 'Jeugd (jonger dan 2009)',
-    subtitle: `150 Euro (125 lidgeld + 25 verzekering)`,
+    title: 'Jeugd (jonger dan 2010)',
+    subtitle: `180 Euro (150 lidgeld + 30 verzekering)`,
   },
   {
     prependIcon: 'mdi-numeric-2-circle',
     title: 'Volwassenen',
-    subtitle: `200 Euro (175 lidgeld + 25 verzekering)`,
+    subtitle: `230 Euro (200 lidgeld + 30 verzekering)`,
   },
   {
     prependIcon: 'mdi-numeric-3-circle',
     title: 'Combinatie stijltraining en fighting',
-    subtitle: `300 Euro (275 lidgeld + 25 verzekering)`,
+    subtitle: `270 Euro (240 lidgeld + 30 verzekering)`,
   },
   {
     prependIcon: 'mdi-numeric-4-circle',
     title: 'Beurtenkaart (7 + 1)',
-    subtitle: `60 Euro, ook bij de aankoop van een beurtenkaart dient de verzekeringskost van € 25 op jaarbasis betaald te worden.`,
+    subtitle: `60 Euro, ook bij de aankoop van een beurtenkaart dient de verzekeringskost van € 30 op jaarbasis betaald te worden.`,
   },
 ]);
 </script>
