@@ -13,7 +13,7 @@
         <v-sheet max-height="400">
           <v-calendar
               ref="calendar"
-              v-model:date="today"
+              v-model="today"
               color="primary"
               view-mode="month"
               :events="events"
