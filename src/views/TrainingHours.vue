@@ -36,7 +36,7 @@ let events = ref(
       {
         title: 'Start traingingen jeugd',
         start: new Date('2025-09-06 9:30'),
-        end: new Date('2025-09-06 12:30'),
+        end: new Date('2025-09-06 12:30'), //test
         color: colors.value[1],
       },
       {
