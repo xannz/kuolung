@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import {type Ref, ref} from 'vue';
+import {ref} from 'vue';
 
 const titles = ref(['Adults', 'Youth', 'Competition', 'Event']);
 const colors = ref(['blue', 'indigo', 'deep-purple', 'orange']);
