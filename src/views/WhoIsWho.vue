@@ -49,14 +49,14 @@ import { ref } from 'vue';
 
 let cards = ref([
     { title: 'Bart De Sloovere', src: './images/jj-wie-bds.jpg', flex: 4, notes: ['3de dan Ju-Jitsu stijl FVH Open Systeem', 'Voorzitter', 'Hoofdtrainer'] },
-    { title: 'David Reubens', src: './images/jj-wie-dr.jpg', flex: 4, notes: ['2de dan Ju-Jitsu stijl FVH Open Systeem', 'Trainer / jeugdtrainer', 'VTS initiator Ju-Jitsu'] },
+    { title: 'David Reubens', src: './images/jj-wie-dr.jpg', flex: 4, notes: ['2de dan Ju-Jitsu stijl FVH Open Systeem', 'Trainer / jeugdtrainer', 'VTS instructeur B Ju-Jitsu'] },
     { title: 'Ad-Jan Willemsen', src: 'https://cdn.vuetifyjs.com/images/parallax/material2.jpg', flex: 4, notes: ['2de dan Ju-Jitsu stijl FVH Open Systeem', 'Trainer'] },
     { title: 'Sander Borny', src: 'https://cdn.vuetifyjs.com/images/parallax/material.jpg', flex: 4, notes: ['1ste dan Ju-Jitsu stijl FVH Open Systeem', 'Jeugdtrainer'] },
     { title: 'Ryan Lodens', src: './images/jj-wie-rl.jpg', flex: 4, notes: ['1ste dan Ju-Jitsu competitie', 'Hoofdtrainer fighting'] },
     { title: 'Pieter Musschoot', src: './images/jj-wie-pm.jpeg', flex: 4, notes: ['1ste kyu', 'Trainer'] },
-    { title: 'Lazlo Ackerman', src: './images/jj-wie-la.jpg', flex: 4, notes: ['2de kyu'] },
-    { title: 'Yentl Van Lersberghe', src: './images/jj-wie-yvl.jpg', flex: 4, notes: ['2de kyu', 'Jeugdcoördinator', 'Jeugdtrainer'] },
+    { title: 'Lazlo Ackerman', src: './images/jj-wie-la.jpg', flex: 4, notes: ['2de kyu', 'Coördinator evenementen'] },
+    { title: 'Yentl Van Lersberghe', src: './images/jj-wie-yvl.jpg', flex: 4, notes: ['2de kyu', 'Jeugdcoördinator / secretaris', 'Jeugdtrainer'] },
     { title: 'Thomas Crabbe', src: './images/jj-wie-tc.jpg', flex: 4, notes: ['2de kyu', 'Jeugdtrainer'] },
-    { title: 'Tamara Verbeke', src: './images/jj-wie-tv.jpg', flex: 4, notes: ['5de kyu', 'Administratie', 'Vertrouwenspersoon', 'Telefoon: 0496 47 40 84'] },
+    { title: 'Tamara Verbeke', src: './images/jj-wie-tv.jpg', flex: 4, notes: ['5de kyu', 'Administratie / penningmeester', 'Vertrouwenspersoon', 'Telefoon: 0496 47 40 84'] },
 ]);
 </script>

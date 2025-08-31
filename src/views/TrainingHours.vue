@@ -139,14 +139,6 @@ let trainingHoursCompetition = ref([
     prependIcon: 'mdi-numeric-2-circle',
     title: '19:30 - 21:00',
     subtitle: `<span class="text-primary">Groep 2</span> &mdash; Sporthal de Stormmeeuw`,
-  },
-
-  { type: 'divider', inset: true },
-  { type: 'subheader', title: 'Zaterdag' },
-  {
-    prependIcon: 'mdi-numeric-1-circle',
-    title: '19:00 - 20:30',
-    subtitle: `<span class="text-primary">Alle leeftijden</span> &mdash; Sporthal Laguna`,
   }
 ]);
 </script>
